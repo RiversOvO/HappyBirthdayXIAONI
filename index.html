@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Happy Birthday">
     <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
@@ -25,32 +26,56 @@
         Your browser isn't invited for super fun audio time.
     </audio>
 
-    <div class="balloons text-center" id="b1"><h2 style="color:#F2B300;"></h2></div>
-    <div class="balloons text-center" id="b2"><h2 style="color:#0719D4;"></h2></div>
-    <div class="balloons text-center" id="b3"><h2 style="color:#D14D39;"></h2></div>
-    <div class="balloons text-center" id="b4"><h2 style="color:#8FAD00;"></h2></div>
-    <div class="balloons text-center" id="b5"><h2 style="color:#8377E4;"></h2></div>
-    <div class="balloons text-center" id="b6"><h2 style="color:#99C96A;"></h2></div>
-    <div class="balloons text-center" id="b7"><h2 style="color:#20CFB4;"></h2></div>
+    <div class="balloons text-center" id="b1">
+        <h2 style="color:#F2B300;"></h2>
+    </div>
+    <div class="balloons text-center" id="b2">
+        <h2 style="color:#0719D4;"></h2>
+    </div>
+    <div class="balloons text-center" id="b3">
+        <h2 style="color:#D14D39;"></h2>
+    </div>
+    <div class="balloons text-center" id="b4">
+        <h2 style="color:#8FAD00;"></h2>
+    </div>
+    <div class="balloons text-center" id="b5">
+        <h2 style="color:#8377E4;"></h2>
+    </div>
+    <div class="balloons text-center" id="b6">
+        <h2 style="color:#99C96A;"></h2>
+    </div>
+    <div class="balloons text-center" id="b7">
+        <h2 style="color:#20CFB4;"></h2>
+    </div>
 
     <img src="assets/Balloon-Border.png" width="100%" class="balloon-border">
 
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_yellow"></div></div>
-            <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_red"></div></div>
-            <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_blue"></div></div>
-            <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_green"></div></div>
-            <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_pink"></div></div>
-            <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_orange"></div></div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_yellow"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_red"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_blue"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_green"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_pink"></div>
+            </div>
+            <div class="col-md-2 col-xs-2 bulb-holder">
+                <div class="bulb" id="bulb_orange"></div>
+            </div>
         </div>
-
         <div class="row">
             <div class="col-md-12 text-center">
                 <img src="assets/banner.png" class="bannar">
             </div>
         </div>
-
         <div class="row cake-cover">
             <div class="col-md-12 texr-center">
                 <div class="cake">
@@ -66,13 +91,14 @@
                 </div>
             </div>
         </div>
-
         <div class="row message">
             <div class="col-md-12" id="texts-container">
             </div>
+        </div>
 
-            <div class="col-md-12" id="video-container" style="display: none; text-align: center; margin-top: 10px;">
-                <video id="my-video" style="width: 100%; max-width: 340px; max-height: 60vh; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); background: #000;" controls playsinline>
+        <div class="row" id="video-container" style="display: none; text-align: center; margin-top: -60px; margin-bottom: 80px; position: relative; z-index: 10;">
+            <div class="col-md-12">
+                <video id="my-video" style="width: 220px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);" controls playsinline>
                     <source src="assets/video.mp4" type="video/mp4">
                     您的浏览器不支持视频播放。
                 </video>
@@ -95,33 +121,29 @@
             </div>
         </div>
     </div>
+</body>
+<script src="assets/jquery.min.js"></script>
+<script src="./assets/bootstrap.min.js"></script>
+<script src="assets/effect.js"></script>
 
-    <script src="assets/jquery.min.js"></script>
-    <script src="./assets/bootstrap.min.js"></script>
-    <script src="assets/effect.js"></script>
-    <script src="custom.js"></script>
+<script src="custom.js"></script>
+<script>
+    $(document).ready(function () {
+        // 点击“一些悄悄话”后，延迟 8 秒显示视频按钮
+        $("#story").click(function () {
+            setTimeout(function () {
+                $("#play_video").fadeIn("slow");
+            }, 8000);
+        });
 
-    <script>
-        $(document).ready(function () {
-            // 点击“一些悄悄话”后，延迟 20 秒显示视频按钮
-            $("#story").click(function () {
-                setTimeout(function () {
-                    $("#play_video").fadeIn("slow");
-                }, 20000);
-            });
-
-            // 点击“最后一份小礼物”按钮的执行逻辑
-            $("#play_video").click(function () {
-                $(this).fadeOut(); // 隐藏视频按钮本身
-                $(".song")[0].pause(); // 暂停背景音乐
-
-                // 【核心修改】不仅淡出文字，连同蛋糕(.cake-cover)和横幅(.bannar)一起淡出
-                $("#texts-container, .cake-cover, .bannar").fadeOut("slow", function () {
-                    // 等它们都消失后，再干净地浮现你的视频
-                    $("#video-container").fadeIn("slow");
-                });
+        // 点击“最后一份小礼物”按钮的执行逻辑
+        $("#play_video").click(function () {
+            $(this).fadeOut(); // 隐藏视频按钮本身
+            $(".song")[0].pause(); // 暂停背景音乐，避免声音重叠
+            $("#texts-container").fadeOut("slow", function () {
+                $("#video-container").fadeIn("slow"); // 仅仅浮现视频，保留蛋糕和气球
             });
         });
-    </script>
-</body>
+    });
+</script>
 </html>
